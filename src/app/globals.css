@@ -123,4 +123,10 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .hero-background {
+    background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 51%, #FF1E56 100%);
+  }
 }
+
+
