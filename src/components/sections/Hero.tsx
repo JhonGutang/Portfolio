@@ -16,7 +16,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="absolute right-0">
-                <img src="/thumbnail/hero.png" width={800} alt="" />
+                <img src="/thumbnail/hero.png" width={850} alt="" />
             </div>
         </div>
         </div>
