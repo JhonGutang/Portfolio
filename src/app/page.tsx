@@ -1,16 +1,23 @@
-import UnderConstruction from "@/components/UnderConstruction";
+import Navbar from "@/components/Navbar";
+import About from "@/components/sections/About";
 import Hero from "@/components/sections/Hero";
-export default function Home() {
-  const hide = true;
+import UnderConstruction from "@/components/UnderConstruction";
+
+const Home = () => {
+  const isDisabled = true;
   return (
-    <div>
-      {hide ? (
-        <div className=" w-screen flex items-center justify-center h-screen">
-          <UnderConstruction />
-        </div>
+    <div className="flex flex-col items-center justify-end px-5">
+      {isDisabled ? (
+         <UnderConstruction />
       ) : (
-        <Hero />
+        <div>
+          <Navbar />
+          <Hero />
+          <About />
+        </div>
       )}
     </div>
   );
-}
+};
+
+export default Home;

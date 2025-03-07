@@ -121,12 +121,18 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    /* @apply bg-background text-foreground; */
+    background-color: #29232E;
+    color: white;
   }
 
-  .hero-background {
-    background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 51%, #FF1E56 100%);
+  .headline-pl {
+    padding-left: 150px !important;
   }
+
+  .distance-from-nav {
+    padding-top: 14vh !important;
+  }
+
+
 }
-
-
