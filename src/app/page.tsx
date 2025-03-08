@@ -7,13 +7,13 @@ import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "700"], // Choose weights you need
+  weight: ["300", "400", "700"],
   style: ["normal", "italic"],
   display: "swap",
 });
 
 const Home = () => {
-  const isDisabled = false;
+  const isDisabled = true;
   return (
     <div className="flex flex-col items-center justify-end px-5">
       {isDisabled ? (
