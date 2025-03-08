@@ -134,5 +134,16 @@
     padding-top: 14vh !important;
   }
 
+  @keyframes slideIn {
+    from {
+      transform: translateX(-20%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 
 }
