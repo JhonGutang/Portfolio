@@ -9,7 +9,7 @@ const About = () => {
           <img src="/about_me/about_me.svg" alt="" className="w-[80vw] lg:w-[40vw]" />
         </div>
         <div className="text-center lg:text-left px-4">
-          <div className="text-2xl mb-2">Hi, I'm Jhon!</div>
+          <div className="text-2xl mb-2">Hi, I&apos;m Jhon!</div>
           <p className="mb-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
             dolore aliquid quos repellendus repellat esse ex illum nobis rerum

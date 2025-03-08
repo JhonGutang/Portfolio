@@ -1,3 +1,4 @@
+
 import TechStack from "../TechStack";
 
 const Projects = () => {
@@ -9,9 +10,9 @@ const Projects = () => {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem consectetur placeat reprehenderit alias, quam ea repellendus incidunt aliquid aliquam beatae!",
       images: ["/projects/gradeqslot.png"],
       techStack: [
-        { name: "Vue", iconLink: "tech_stack/vue.png" },
-        { name: "Vuetify", iconLink: "tech_stack/vuetify.png" },
-        { name: "Laravel", iconLink: "tech_stack/laravel.png" },
+        { name: "Vue", iconLink: "/tech_stack/vue.png" },
+        { name: "Vuetify", iconLink: "/tech_stack/vuetify.png" },
+        { name: "Laravel", iconLink: "/tech_stack/laravel.png" },
       ],
     },
     {
@@ -21,9 +22,9 @@ const Projects = () => {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem consectetur placeat reprehenderit alias, quam ea repellendus incidunt aliquid aliquam beatae!",
       images: ["/projects/quiz_studio.png"],
       techStack: [
-        { name: "Vue", iconLink: "tech_stack/vue.png" },
-        { name: "Vuetify", iconLink: "tech_stack/vuetify.png" },
-        { name: "Laravel", iconLink: "tech_stack/laravel.png" },
+        { name: "Vue", iconLink: "/tech_stack/vue.png" },
+        { name: "Vuetify", iconLink: "/tech_stack/vuetify.png" },
+        { name: "Laravel", iconLink: "/tech_stack/laravel.png" },
       ],
     },
     {
@@ -33,8 +34,8 @@ const Projects = () => {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem consectetur placeat reprehenderit alias, quam ea repellendus incidunt aliquid aliquam beatae!",
       images: ["/projects/collabit.png"],
       techStack: [
-        { name: "React", iconLink: "tech_stack/react.png" },
-        { name: "Tailwind", iconLink: "tech_stack/tailwind.png" },
+        { name: "React", iconLink: "/tech_stack/react.png" },
+        { name: "Tailwind", iconLink: "/tech_stack/tailwind.png" },
       ],
     },
   ];

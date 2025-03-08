@@ -105,7 +105,7 @@ const Hero = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.8 }}
                 >
-                    "Transforming Ideas into Scalable, High-Performance Web Solutions"
+                    &quot;Transforming Ideas into Scalable, High-Performance Web Solutions&quot;
                 </motion.div>
             </motion.div>
         </motion.div>
