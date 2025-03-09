@@ -13,7 +13,7 @@ const Contact = () => {
         <img src="/contact.svg" alt="" className="w-[60vw] lg:w-[30vw]" />
       </div>
       <div className="w-full flex flex-col items-center lg:items-start lg:justify-center">
-        <div className="lg:text-3xl mb-5 text-3xl">Let's Collaborate!!</div>
+        <div className="lg:text-3xl mb-5 text-3xl">Let&apos;s Collaborate!!</div>
         <div className="flex flex-col gap-4">
         { socials.map((social, index) => (
             <div key={index} >
