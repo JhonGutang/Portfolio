@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 interface NavbarProps {
-  scrollTo: (section: 'hero' | 'about' | 'projects') => void;
+  scrollTo: (section: 'hero' | 'about' | 'projects' | 'contact') => void;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ scrollTo }) => {
-  type SectionType = 'hero' | 'about' | 'projects';
+  type SectionType = 'hero' | 'about' | 'projects' | 'contact';
 
   const [activeSection, setActiveSection] = useState<SectionType>('hero');
 
@@ -22,6 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollTo }) => {
     { id: "hero", section: "hero" },
     { id: "about", section: "about" },
     { id: "projects", section: "projects" },
+    { id: "contact", section: "contact" },
   ];
 
   useEffect(() => {
@@ -65,8 +66,8 @@ const Navbar: React.FC<NavbarProps> = ({ scrollTo }) => {
             whileTap={{ scale: 0.9 }}
             whileHover="hover"
             onClick={() => {
-              scrollTo(item.section as 'hero' | 'about' | 'projects');
-              setActiveSection(item.section as 'hero' | 'about' | 'projects');
+              scrollTo(item.section as 'hero' | 'about' | 'projects' | 'contact');
+              setActiveSection(item.section as 'hero' | 'about' | 'projects' | 'contact');
             }}
           >
             <item.icon />

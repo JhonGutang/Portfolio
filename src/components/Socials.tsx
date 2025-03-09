@@ -8,9 +8,10 @@ const Socials = () => {
   const [hoveredIcon, setHoveredIcon] = useState<string | null>(null);
 
   const socialIcons = [
-    { id: 'facebook', iconLink: '/about_me/facebook.png' },
-    { id: 'github', iconLink: '/about_me/github.png' },
-    { id: 'gmail', iconLink: '/about_me/gmail.png' }
+    { id: 'linkedin', name: 'Jhon Barry Gutang', iconLink: '/about_me/linkedin.png', socialLink: 'https://linkedin.com/in/jhongutang' },
+    { id: 'github', name: 'Jhon Gutang', iconLink: '/about_me/github.png', socialLink: 'https://github.com/JhonGutang' },
+    { id: 'fb', name: 'Jhon Barry D. Gutang', iconLink: '/about_me/facebook.png', socialLink: 'https://www.facebook.com/Voider.Kayle' },
+    { id: 'gmail', name: 'jhonbarrygutang@gmail.com', iconLink: '/about_me/gmail.png' },
   ];
 
   const motionProps = {
@@ -20,7 +21,7 @@ const Socials = () => {
 
   return (
     <div className="w-full text-left mt-7 flex gap-5 items-center justify-center lg:justify-start">
-      {socialIcons.map(({ id, iconLink }) => (
+      {socialIcons.map(({ id, name, iconLink, socialLink }) => (
         <motion.div
           key={id}
           {...motionProps}
@@ -29,7 +30,8 @@ const Socials = () => {
         >
           <ImageIcons 
             iconLink={iconLink}
-            name={hoveredIcon === id ? id : undefined}
+            name={hoveredIcon === id ? name : undefined}
+            socialLink={socialLink ?? undefined}
           />
         </motion.div>
       ))}

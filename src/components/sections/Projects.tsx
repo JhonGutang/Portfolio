@@ -39,13 +39,14 @@ const Projects = () => {
       techStack: [
         { name: "React", iconLink: "/tech_stack/react.png" },
         { name: "Tailwind", iconLink: "/tech_stack/tailwind.png" },
+        { name: "Django", iconLink: "/tech_stack/django.png" },
       ],
     },
   ];
 
   return (
     <div className="w-full flex flex-col h-fit">
-      <div className="text-3xl capitalize sticky top-0 flex items-end justify-center h-[20vh] mb-10 lg:h-[25vh] w-full py-5 lg:mb-10" style={{backgroundColor: '#29232E'}}>projects</div>
+      <div className="text-3xl capitalize flex items-end justify-center h-[20vh] mb-10 lg:h-[25vh] w-full py-5 lg:mb-10" style={{backgroundColor: '#29232E'}}>projects</div>
       <div className="flex flex-wrap justify-center gap-5">
         {projectList.map((project, index) => (
           <div key={index} className="flex flex-wrap lg:items-center lg:flex-nowrap gap-5" style={{marginBottom: '30vh'}}>

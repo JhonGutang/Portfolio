@@ -1,7 +1,9 @@
 import Socials from "../Socials";
+import Skills from "./Skills";
 
 const About = () => {
   return (
+    <div>
     <div className="w-full h-[100vh] flex flex-col items-center distance-from-nav gap-10">
       <div className="text-3xl lg:mb-8">About Me</div>
       <div className="w-full flex flex-wrap lg:flex-nowrap gap-8 justify-center">
@@ -23,6 +25,8 @@ const About = () => {
           <Socials/>
         </div>
       </div>
+    </div>
+    <Skills/>
     </div>
   );
 };
