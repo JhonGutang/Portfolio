@@ -17,7 +17,7 @@ const poppins = Poppins({
 });
 
 const Home = () => {
-  const isDisabled = false;
+  const isDisabled = true;
   const heroRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const projectsRef = useRef<HTMLDivElement | null>(null);
