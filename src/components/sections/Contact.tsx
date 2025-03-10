@@ -8,7 +8,7 @@ const Contact = () => {
         { name: 'jhonbarrygutang@gmail.com', iconLink: '/about_me/gmail.png' },
     ]
   return (
-    <div className="w-full h-screen  distance-from-nav flex lg:flex-row flex-col justify-center gap-15">
+    <div className="w-full h-screen distance-from-nav flex lg:flex-row flex-col gap-15">
       <div className=" w-full flex justify-center lg:justify-end items-center">
         <img src="/contact.svg" alt="" className="w-[60vw] lg:w-[30vw]" />
       </div>

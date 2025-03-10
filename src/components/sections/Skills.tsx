@@ -15,7 +15,7 @@ const Skills = () => {
 
   ];
   return (
-    <div className=" w-full h-[110vh] flex items-center justify-center distance-from-nav">
+    <div className=" w-full h-[130vh] lg:h-[110vh] flex items-center justify-center distance-from-nav">
       <div className="flex flex-col lg:flex-row gap-12 items-center  w-full justify-center">
         <div className="lg:w-full lg:flex lg:justify-center">
           <img src="/tech_stack/programming.svg" alt="" className="w-[70vw] lg:w-[30vw]" />
