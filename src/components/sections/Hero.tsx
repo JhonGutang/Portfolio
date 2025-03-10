@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
-
+import { Button } from "../ui/button";
 const Hero = () => {
     const [isDesktop, setIsDesktop] = useState(false);
     const name = "Jhon Barry D. Gutang";
@@ -107,6 +107,14 @@ const Hero = () => {
                 >
                     &quot;Transforming Ideas into Scalable, High-Performance Web Solutions&quot;
                 </motion.div>
+                <div className="mt-5">
+                <Button className="cursor-pointer" style={{backgroundColor: '#6C63FF'}}>
+                    <a href="/gutang-resume.pdf" download>
+                    Check my Resume
+                    </a>
+                    </Button>
+
+                </div>
             </motion.div>
         </motion.div>
     );

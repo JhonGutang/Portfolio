@@ -38,6 +38,7 @@ const Projects = () => {
       images: ["/projects/collabit.png"],
       techStack: [
         { name: "React", iconLink: "/tech_stack/react.png" },
+        { name: "Typescript", iconLink: "/tech_stack/typescript.png" },
         { name: "Tailwind", iconLink: "/tech_stack/tailwind.png" },
         { name: "Django", iconLink: "/tech_stack/django.png" },
       ],
