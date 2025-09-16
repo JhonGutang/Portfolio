@@ -21,8 +21,6 @@ const About = () => {
   const imageControls = useAnimation();
   const textControls = useAnimation();
 
-  // Intersection Observer logic to trigger animation every time in view
-  // Reset to hidden when out of view, then animate to visible when in view
   useEffect(() => {
     const node = imageRef.current;
     if (!node) return;
@@ -58,13 +56,13 @@ const About = () => {
   }, [textControls]);
 
   return (
-    <div>
-      <div className="w-full flex flex-col items-center distance-from-nav gap-10">
+    <div className="w-full max-w-7xl mx-auto">
+      <div className="w-full flex flex-col items-center distance-from-nav gap-10 px-4">
         <div className="text-3xl lg:mb-8">About Me</div>
-        <div className="w-full flex flex-wrap lg:flex-nowrap gap-8 justify-center">
+        <div className="w-full max-w-6xl flex flex-col lg:flex-row gap-8 justify-center items-center">
           <motion.div
             ref={imageRef}
-            className=" lg:w-full lg:flex lg:justify-end"
+            className="w-full max-w-md lg:max-w-lg lg:flex-shrink-0"
             variants={imageVariants}
             initial="hidden"
             animate={imageControls}
@@ -72,12 +70,12 @@ const About = () => {
             <img
               src="/about_me/about_me.svg"
               alt=""
-              className="w-[80vw] lg:w-[40vw]"
+              className="w-full h-auto"
             />
           </motion.div>
           <motion.div
             ref={textRef}
-            className="text-center lg:text-left px-4 max-w-2xl"
+            className="text-center lg:text-left max-w-2xl w-full"
             variants={textVariants}
             initial="hidden"
             animate={textControls}

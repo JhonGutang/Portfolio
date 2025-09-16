@@ -47,7 +47,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
   return (
     <motion.div
       ref={ref}
-      className="flex flex-wrap lg:items-center lg:flex-nowrap gap-10 mb-15"
+      className="flex flex-wrap lg:items-center lg:flex-nowrap gap-10 mb-15 "
       variants={slideVariants[direction]}
       initial="hidden"
       animate={controls}
@@ -76,8 +76,8 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
 
 const Projects = () => {
   return (
-    <div className="w-full flex flex-col h-fit">
-      <div className="text-3xl capitalize flex items-end justify-center h-[20vh] mb-10 lg:h-[25vh] w-full py-5 lg:mb-10" style={{backgroundColor: '#29232E'}}>projects</div>
+    <div className=" w-full flex flex-col h-fit">
+      <div className=" text-3xl capitalize flex items-end justify-center h-[20vh] mb-10 lg:h-[25vh] w-full py-5 lg:mb-10" style={{backgroundColor: '#29232E'}}>projects</div>
       <div className="flex flex-wrap justify-center gap-5">
         {projectList.map((project, index) => (
           <ProjectCard key={index} project={project as Project} index={index} />
