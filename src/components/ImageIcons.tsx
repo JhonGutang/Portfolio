@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-
 interface ImageIconProps {
   name?: string;
   iconLink: string;
@@ -21,12 +20,39 @@ const ImageIcon: React.FC<ImageIconProps> = ({
     transition: { duration: 0.2 }
   };
 
+  // Set a fixed width and height for the icon container to ensure consistency
+  const ICON_SIZE = 30;
+
   return (
     <motion.div 
       className={`flex gap-2 items-center cursor-pointer ${withBorder ? 'border-2 p-5 w-fit' : ''}`}
       whileHover={hoverAnimation}
+      style={{
+        minHeight: ICON_SIZE,
+        minWidth: ICON_SIZE,
+      }}
     >
-      <img src={iconLink} alt="" width={30} />
+      <div
+        style={{
+          width: ICON_SIZE,
+          height: ICON_SIZE,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexShrink: 0,
+        }}
+      >
+        <img
+          src={iconLink}
+          alt=""
+          style={{
+            width: ICON_SIZE,
+            height: ICON_SIZE,
+            objectFit: "contain",
+            display: "block",
+          }}
+        />
+      </div>
       {name && (
         <div
           className="text-sm lg:text-lg animate-slideIn"
@@ -35,7 +61,7 @@ const ImageIcon: React.FC<ImageIconProps> = ({
           }}
         >
           {socialLink ? (
-            <a href={socialLink} target="_blank">{name}</a>
+            <a href={socialLink} target="_blank" rel="noopener noreferrer">{name}</a>
           ) : (
             <div>{name}</div>
           )}

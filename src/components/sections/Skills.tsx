@@ -5,13 +5,18 @@ const Skills = () => {
     { name: "CSS", link: "tech_stack/css.png" },
     { name: "Javascript", link: "tech_stack/js.png" },
     { name: "Typescript", link: "tech_stack/typescript.png" },
+    { name: "PHP", link: "tech_stack/php.png" },
     { name: "Bootstrap", link: "tech_stack/bootstrap.png" },
     { name: "Tailwind", link: "tech_stack/tailwind.png" },
     { name: "Vue", link: "tech_stack/vue.png" },
     { name: "Vuetify", link: "tech_stack/vuetify.png" },
     { name: "React", link: "tech_stack/react.png" },
     { name: "Laravel", link: "tech_stack/laravel.png" },
-    { name: "Django", link: "tech_stack/django.png" },
+    { name: "Express JS", link: "tech_stack/express_js.svg"},
+    { name: "Prisma", link: "tech_stack/prisma.png"},
+    { name: "MySQL", link: "tech_stack/mysql.png"},
+    { name: "PostgreSQL", link: "tech_stack/postgresql.png"},
+    { name: "GraphQL", link: "tech_stack/graphql.png"},
 
   ];
   return (

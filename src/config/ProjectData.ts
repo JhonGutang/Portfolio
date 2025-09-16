@@ -10,6 +10,7 @@ export const projectList = [
         { name: "Vue", iconLink: "/tech_stack/vue.png" },
         { name: "Vuetify", iconLink: "/tech_stack/vuetify.png" },
         { name: "Laravel", iconLink: "/tech_stack/laravel.png" },
+        { name: "MySQL", iconLink: "/tech_stack/mysql.png" },
       ],
     },
     {
@@ -23,6 +24,7 @@ export const projectList = [
         { name: "Vue", iconLink: "/tech_stack/vue.png" },
         { name: "Vuetify", iconLink: "/tech_stack/vuetify.png" },
         { name: "Laravel", iconLink: "/tech_stack/laravel.png" },
+        { name: "PostgreSQL", iconLink: "/tech_stack/postgresql.png" },
       ],
     },
     {
@@ -37,6 +39,7 @@ export const projectList = [
         { name: "Typescript", iconLink: "/tech_stack/typescript.png" },
         { name: "Tailwind", iconLink: "/tech_stack/tailwind.png" },
         { name: "Laravel", iconLink: "/tech_stack/laravel.png" },
+        { name: "MySQL", iconLink: "/tech_stack/mysql.png" },
       ],
     },
   ];
