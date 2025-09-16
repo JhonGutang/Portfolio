@@ -1,9 +1,5 @@
 import ImageIcon from "./ImageIcons";
-
-type Tech = {
-    name: string,
-    iconLink: string,
-}
+import { Tech } from "@/types/global";
 
 interface TechStackProps {
     techStack: Tech[]

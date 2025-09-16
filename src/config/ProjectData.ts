@@ -1,3 +1,5 @@
+import { Tech } from "@/types/global";
+
 export const projectList = [
     {
       name: "GradeQSlot",
@@ -42,4 +44,24 @@ export const projectList = [
         { name: "MySQL", iconLink: "/tech_stack/mysql.png" },
       ],
     },
+  ];
+
+
+ export const TECH_STACK = <Tech[]>[
+    { name: "HTML", iconLink: "tech_stack/html.png"},
+    { name: "CSS", iconLink: "tech_stack/css.png" },
+    { name: "Javascript", iconLink: "tech_stack/js.png" },
+    { name: "Typescript", iconLink: "tech_stack/typescript.png" },
+    { name: "PHP", iconLink: "tech_stack/php.png" },
+    { name: "Bootstrap", iconLink: "tech_stack/bootstrap.png" },
+    { name: "Tailwind", iconLink: "tech_stack/tailwind.png" },
+    { name: "Vue", iconLink: "tech_stack/vue.png" },
+    { name: "Vuetify", iconLink: "tech_stack/vuetify.png" },
+    { name: "React", iconLink: "tech_stack/react.png" },
+    { name: "Laravel", iconLink: "tech_stack/laravel.png" },
+    { name: "Express JS", iconLink: "tech_stack/express_js.svg"},
+    { name: "Prisma", iconLink: "tech_stack/prisma.png"},
+    { name: "MySQL", iconLink: "tech_stack/mysql.png"},
+    { name: "PostgreSQL", iconLink: "tech_stack/postgresql.png"},
+    { name: "GraphQL", iconLink: "tech_stack/graphql.png"},
   ];

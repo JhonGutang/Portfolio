@@ -1,8 +1,15 @@
 import ImageIcon from "../ImageIcons";
 import { motion, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";
+import { TECH_STACK } from "@/config/ProjectData";
+import { Tech } from "@/types/global";
 
-const TechIcon = ({ tech, index }: { tech: any; index: number }) => {
+interface TechIconProps {
+  tech: Tech;
+  index: number;
+}
+
+const TechIcon: React.FC<TechIconProps> = ({ tech, index }) => {
   const ref = useRef<HTMLDivElement>(null);
   const controls = useAnimation();
 
@@ -45,7 +52,7 @@ const TechIcon = ({ tech, index }: { tech: any; index: number }) => {
       animate={controls}
     >
       <ImageIcon
-        iconLink={tech.link}
+        iconLink={tech.iconLink}
         name={tech.name}
         withBorder={true}
         expandWhenHovered={true}
@@ -55,25 +62,6 @@ const TechIcon = ({ tech, index }: { tech: any; index: number }) => {
 };
 
 const Skills = () => {
-  const techStack = [
-    { name: "HTML", link: "tech_stack/html.png"},
-    { name: "CSS", link: "tech_stack/css.png" },
-    { name: "Javascript", link: "tech_stack/js.png" },
-    { name: "Typescript", link: "tech_stack/typescript.png" },
-    { name: "PHP", link: "tech_stack/php.png" },
-    { name: "Bootstrap", link: "tech_stack/bootstrap.png" },
-    { name: "Tailwind", link: "tech_stack/tailwind.png" },
-    { name: "Vue", link: "tech_stack/vue.png" },
-    { name: "Vuetify", link: "tech_stack/vuetify.png" },
-    { name: "React", link: "tech_stack/react.png" },
-    { name: "Laravel", link: "tech_stack/laravel.png" },
-    { name: "Express JS", link: "tech_stack/express_js.svg"},
-    { name: "Prisma", link: "tech_stack/prisma.png"},
-    { name: "MySQL", link: "tech_stack/mysql.png"},
-    { name: "PostgreSQL", link: "tech_stack/postgresql.png"},
-    { name: "GraphQL", link: "tech_stack/graphql.png"},
-  ];
-
   return (
     <div className=" w-full h-[130vh] lg:h-[110vh] flex items-center justify-center distance-from-nav">
       <div className="flex flex-col lg:flex-row gap-12 items-center  w-full justify-center">
@@ -83,7 +71,7 @@ const Skills = () => {
         <div className="w-full text-center lg:text-start">
             <div className="text-3xl mb-5">Tech Stack</div>
             <div className="flex lg:justify-start justify-center flex-wrap gap-3 px-3">
-              {techStack.map((tech, i) => (
+              {TECH_STACK.map((tech, i) => (
                 <TechIcon key={tech.name} tech={tech} index={i} />
               ))}
             </div>

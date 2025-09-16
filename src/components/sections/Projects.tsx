@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import { projectList } from "@/config/ProjectData";
 import { motion, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";
+import { Project} from "@/types/global";
 
 const slideVariants = {
   left: {
@@ -16,8 +17,13 @@ const slideVariants = {
   },
 };
 
-const ProjectCard = ({ project, index }: { project: any; index: number }) => {
-  const direction = index % 2 === 0 ? "right" : "left";
+interface ProjectCardProps {
+  project: Project;
+  index: number;
+}
+
+const ProjectCard = ({ project, index }: ProjectCardProps) => {
+  const direction: "left" | "right" = index % 2 === 0 ? "right" : "left";
   const ref = useRef<HTMLDivElement>(null);
   const controls = useAnimation();
 
@@ -74,7 +80,7 @@ const Projects = () => {
       <div className="text-3xl capitalize flex items-end justify-center h-[20vh] mb-10 lg:h-[25vh] w-full py-5 lg:mb-10" style={{backgroundColor: '#29232E'}}>projects</div>
       <div className="flex flex-wrap justify-center gap-5">
         {projectList.map((project, index) => (
-          <ProjectCard key={index} project={project} index={index} />
+          <ProjectCard key={index} project={project as Project} index={index} />
         ))}
       </div>
     </div>
